@@ -23,7 +23,7 @@ Eruption? cErupt = eruptions.FirstOrDefault(p => p.Location == "Chile");
 // Find Hawaiian Is eruption, if non pringt no hawaiian is found
 IEnumerable<Eruption> hawaiiIsland = eruptions.Where(h => h.Location == "Hawaiian Is");
 Console.WriteLine(hawaiiIsland.FirstOrDefault()!=null?("Hawaiian Is" + hawaiiIsland.First().Volcano): "No Hawaiian Is Eruption found");
-
+// da
 
 // Find eruption after year 1900 AND is in New Zealand
 IEnumerable<Eruption> nz1900 = eruptions.Where(nz => nz.Location =="New Zealand" && nz.Year > 1900);
